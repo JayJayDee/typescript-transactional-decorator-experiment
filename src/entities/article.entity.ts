@@ -8,12 +8,28 @@ export class ArticleEntity {
 		this._articleVO = articleVO;
 	}
 
+	public get articleId(): number {
+		return this._articleVO.articleId;
+	}
+
 	public get userId(): number {
 		return this._articleVO.userId;
 	}
 
-	public set userId(userId: number) {
-		this._articleVO.userId = userId;
+	public get title(): string {
+		return this._articleVO.title;
+	}
+
+	public set title(title: string) {
+		this._articleVO.title = title;
+	}
+
+	public get content(): string {
+		return this._articleVO.content;
+	}
+
+	public set content(content: string) {
+		this._articleVO.content = content;
 	}
 
 	public get createdAt(): Date {

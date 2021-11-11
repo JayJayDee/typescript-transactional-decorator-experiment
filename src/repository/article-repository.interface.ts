@@ -1,6 +1,6 @@
 import { ArticleEntity } from '../entities';
 
-type ArticleCreateParam = {
+export type ArticleCreateParam = {
 	userId: number;
 	title: string;
 	content: string;
