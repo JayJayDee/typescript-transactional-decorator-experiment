@@ -6,7 +6,7 @@ import { ArticleCreateParam, IArticleRepository } from './article-repository.int
 @Injectable()
 export class ArticleRepositoryRdb implements IArticleRepository {
 
-	async insertArticle(article: ArticleCreateParam): Promise<ArticleEntity> {
+	public async insertArticle(article: ArticleCreateParam): Promise<ArticleEntity> {
 		const createdArticle = new ArticleEntity({
 			articleId: 1,
 			userId: article.userId,
@@ -15,5 +15,10 @@ export class ArticleRepositoryRdb implements IArticleRepository {
 			createdAt: new Date()
 		});
 		return await Promise.resolve<ArticleEntity>(createdArticle);
+	}
+
+	public async findArticles(): Promise<ArticleEntity[]> {
+		const articles: ArticleEntity[] = [];
+		return articles;
 	}
 }
