@@ -1,6 +1,6 @@
 import { Inject } from '@nestjs/common';
 import { IArticleRepository } from '../repository';
-import { Symbols } from '../symbol';
+import { Symbols } from '../symbols';
 
 export class ArticleService {
 

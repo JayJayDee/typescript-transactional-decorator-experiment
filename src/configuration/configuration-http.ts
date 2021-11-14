@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { Symbols } from '../symbol';
 
+import { Symbols } from '../symbols';
 import { IConfigurationReader } from './configurators/configuration-reader.interface';
 
 @Injectable()

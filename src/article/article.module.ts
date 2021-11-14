@@ -1,6 +1,8 @@
 import { Module } from '@nestjs/common';
+
 import { RepositoryModule, ArticleRepositoryRdb } from '../repository';
-import { Symbols } from '../symbol';
+import { Symbols } from '../symbols';
+
 import { ArticleService } from './article-service';
 
 @Module({

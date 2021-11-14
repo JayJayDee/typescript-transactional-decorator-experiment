@@ -1,5 +1,6 @@
 const Symbols = {
-	IArticleRepository: Symbol.for('IArticleRepository')
+	IConfigurationReader: Symbol('IConfigurationReader'),
+	IArticleRepository: Symbol('IArticleRepository')
 };
 
 export {

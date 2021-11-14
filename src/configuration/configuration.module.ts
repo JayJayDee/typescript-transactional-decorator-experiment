@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { Symbols } from '../symbol';
+import { Symbols } from '../symbols';
 
 import { ConfigurationReader } from './configurators';
 import { HttpConfiguration } from './configuration-http';
