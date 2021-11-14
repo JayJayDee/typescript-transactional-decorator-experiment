@@ -1,14 +1,17 @@
 import { Module } from '@nestjs/common';
 
-import { Symbols } from '../symbols';
+import { ConfigurationModule } from '../configuration';
 import { ArticleRepositoryRdb } from './article-repository-rdb';
 
 @Module({
+	imports: [
+		ConfigurationModule
+	],
 	providers: [
-		{ provide: Symbols.IArticleRepository, useClass: ArticleRepositoryRdb }
+		ArticleRepositoryRdb
 	],
 	exports: [
-		Symbols.IArticleRepository
+		ArticleRepositoryRdb
 	]
 })
 export class RepositoryModule {}

@@ -1,5 +1,6 @@
 const Symbols = {
-	IConfigurationReader: Symbol('IConfigurationReader')
+	IConfigurationReader: Symbol('IConfigurationReader'),
+	IArticleRepository: Symbol('IArticleRepository')
 };
 
 export {
